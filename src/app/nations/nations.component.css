@@ -180,6 +180,10 @@ section{
     justify-content: center;
   }
 
+  .nation .slider .slider-content .tanks> div {
+    flex: 30%;
+  }
+
 }
 
 
