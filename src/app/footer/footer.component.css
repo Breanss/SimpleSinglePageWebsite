@@ -1,0 +1,32 @@
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 9%;
+}
+
+.footer img{
+  width: 30px;
+}
+
+.footer a{
+  font-size: 1.7rem;
+  color: white;
+  margin-left: 2rem;
+  text-decoration: none;
+}
+
+.footer a:hover{
+  color: #f2ec3c;
+}
+
+@media (max-width: 470px) {
+  .footer img{
+    width: 20px;
+  }
+
+  .footer a{
+    font-size: 1.2rem;
+    margin-left: 1.5rem;
+  }
+}

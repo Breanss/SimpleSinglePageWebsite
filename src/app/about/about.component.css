@@ -1,0 +1,91 @@
+section{
+  padding: 10rem 9% 2rem;
+}
+
+.about{
+  background-color: #323946;
+}
+
+.about h2{
+  margin-top: 2rem;
+  font-size: 5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.about h2 span{
+  color: #f2ec3c;
+}
+
+.about-conteiner{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1500px;
+}
+
+.about-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.box{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+  flex: 1 1 30rem;
+  background-color: #1F242D;
+  border-radius: 2rem;
+  padding: 3rem 2rem 4rem;
+  min-height: 450px;
+}
+
+.box:hover{
+  border: #f2ec3c 1px solid;
+}
+
+.box h3{
+  font-size: 2.6rem;
+}
+
+.box p{
+  font-size: 1.7rem;
+  padding-bottom: 1.8rem;
+}
+
+.button{
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem 2.8rem;
+  width: 17rem;
+  background: #f2ec3c;
+  border-radius: 3rem;
+  box-shadow: 0 0 1rem #f2ec3c;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #0d1113;
+}
+
+.button:hover{
+  box-shadow: 0 0 2rem #f2ec3c;
+}
+
+@media (max-width: 1100px) {
+  section{
+    padding: 10rem 5% 5rem;
+  }
+}
+
+@media (max-width: 670px) {
+  .about h2{
+    font-size: 4rem;
+  }
+}
+
+

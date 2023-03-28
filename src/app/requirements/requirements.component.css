@@ -1,0 +1,78 @@
+section{
+  padding: 10rem 9% 2rem;
+}
+
+.requirement{
+  background-color: #323946;
+}
+
+.requirement .requirement-container{
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.requirement h2{
+  margin-top: 2rem;
+  font-size: 5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.requirement h2 span{
+  color: #f2ec3c;
+}
+
+.requirement .requirement-table table{
+  width: 100%;
+  font-size: 1.4rem;
+  border-collapse: collapse;
+  margin-bottom: 15rem;
+  margin-top: 2rem;
+  color: #f1e4d2;
+  font-weight: 550;
+}
+
+.requirement .requirement-table table td{
+  padding: 1.5rem 1.5rem 1.5rem;
+}
+
+.requirement .requirement-table .tab-header{
+  font-size: 1.8rem;
+  color: #f2ec3c;
+  font-weight: 700;
+}
+
+.requirement-table tr:nth-child(2n) {
+  background: #1F242D;
+
+}
+.requirement-table tr:nth-child(2n+1) {
+  background: #323946;
+}
+
+
+.recomend-only{
+  display: none;
+}
+
+@media (max-width: 900px) {
+  section{
+    padding: 10rem 5% 5rem;
+  }
+
+  .recomend-only{
+    display: table;
+  }
+
+  .recomend{
+    display: none;
+  }
+}
+
+@media (max-width: 670px) {
+  .requirement h2{
+    font-size: 4rem;
+  }
+}

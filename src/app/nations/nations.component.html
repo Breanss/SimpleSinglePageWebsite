@@ -1,0 +1,60 @@
+<section class="nation" id="nation">
+  <div class="nation-content">
+    <h2>Różnorodne <span>nacje</span></h2>
+    <div class="slider">
+      <div class="slider-content">
+        <div class="tanks">
+          <div class="lekkie">
+            <h4>{{light}}</h4>
+            <p>CZOłGÓW</p>
+            <p>LEKKICH</p>
+          </div>
+          <div class="srednie">
+            <h4>{{medium}}</h4>
+            <p>CZOłGÓW</p>
+            <p>ŚREDNICH</p>
+          </div>
+          <div class="ciezkie">
+            <h4>{{heavy}}</h4>
+            <p>CZOłGÓW</p>
+            <p>CIĘŻKICH</p>
+          </div>
+          <div class="niszczyciele">
+            <h4>{{td}}</h4>
+            <p>NISZCZYCIELI</p>
+            <p>CZOŁGÓW</p>
+          </div>
+          <div class="samobiezne">
+            <h4>{{artillery}}</h4>
+            <p>ARTYLERI</p>
+          </div>
+        </div>
+        <div class="description">
+          <p>{{description}}</p>
+        </div>
+        <div class="country">
+          <h3 class="left" (click)="clickLeft()">‹</h3>
+          <h3>{{country}}</h3>
+          <h3 class="right" (click)="clickRight()">›</h3>
+        </div>
+      </div>
+      <div class="slider-image">
+        <img src="{{image}}">
+      </div>
+    </div>
+    <div class="flags">
+      <img src="assets/china.png" alt=""/>
+      <img src="assets/czech.png" alt=""/>
+      <img src="assets/france.png" alt=""/>
+      <img class="active" src="assets/germany.png" alt=""/>
+      <img src="assets/italy.png" alt=""/>
+      <img src="assets/japan.png" alt=""/>
+      <img src="assets/poland.png" alt=""/>
+      <img src="assets/sweden.png" alt=""/>
+      <img src="assets/uk.png" alt=""/>
+      <img src="assets/usa.png" alt=""/>
+      <img src="assets/zsrr.png" alt=""/>
+    </div>
+  </div>
+</section>
+
