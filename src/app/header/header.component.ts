@@ -31,7 +31,7 @@ export class HeaderComponent implements OnInit {
           links.forEach(links => {
               links.classList.remove('active');
             // @ts-ignore
-            document.querySelector('header nav a[href*='+id+']').classList.add('active');
+              document.querySelector('header nav a[href*='+id+']').classList.add('active');
           });
         }
       });

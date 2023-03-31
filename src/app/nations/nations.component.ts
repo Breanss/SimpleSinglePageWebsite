@@ -200,23 +200,42 @@ export class NationsComponent implements OnInit {
   }
 
 
-  public clickRight(){
-    this.index++;
+  public async animation(className:any){
+    let tanks = document.querySelectorAll('.tanks');
+    let description = document.querySelectorAll('.description');
+    let image = document.querySelectorAll('.slider-image');
 
-    if(this.index>10){
-      this.index=0;
-    }
-
+    tanks[0].classList.add(className);
+    description[0].classList.add(className);
+    image[0].classList.add(className);
     this.ngOnInit();
+    await new Promise(f => setTimeout(f, 780));
+    tanks[0].classList.remove(className);
+    description[0].classList.remove(className);
+    image[0].classList.remove(className);
   }
 
-  public clickLeft(){
+
+
+  public async clickRight() {
+    await this.animation('animation-appear-nation-middle-to-left');
+    this.index++;
+
+    if (this.index > 10) {
+      this.index = 0;
+    }
+    await this.animation('animation-appear-right-to-middle');
+  }
+
+
+  public async clickLeft() {
+    await this.animation('animation-appear-nation-middle-to-right');
     this.index--;
 
-    if(this.index<0){
-      this.index=10;
+    if (this.index < 0) {
+      this.index = 10;
     }
 
-    this.ngOnInit();
+    await this.animation('animation-appear-nation-left-to-middle');
   }
 }
