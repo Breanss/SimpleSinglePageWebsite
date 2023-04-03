@@ -1,0 +1,22 @@
+.toTop{
+  opacity: 0.5;
+  position: fixed;
+  bottom: 40px;
+  right: 9%;
+  z-index: 80;
+  background-color: #f2ec3c;
+}
+
+.none{
+  display: none;
+}
+
+.toTop:hover{
+  opacity: 1;
+}
+
+.toTop i{
+  padding: 1rem;
+  font-size: 2rem;
+  color: white;
+}

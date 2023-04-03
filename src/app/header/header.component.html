@@ -2,11 +2,11 @@
   <a href="#" class="logo">World of Tanks</a>
   <i class="fa {{icon}} {{color}}" id="menu-icon" (click)="showMenu()"></i>
   <nav class="navbar {{active}}">
-    <a href="#home" class="active">Home</a>
-    <a href="#nation">Nacje</a>
-    <a href="#vehicle">Pojazdy</a>
-    <a href="#about">Tryby gry</a>
-    <a href="#screen">Zrzuty ekranu</a>
-    <a href="#requirement">Wymagania</a>
+    <a href="#home" (click)="changePage()" class="active">Home</a>
+    <a href="#nation" (click)="changePage()">Nacje</a>
+    <a href="#vehicle" (click)="changePage()">Pojazdy</a>
+    <a href="#about" (click)="changePage()">Tryby gry</a>
+    <a href="#screen" (click)="changePage()">Zrzuty ekranu</a>
+    <a href="#requirement" (click)="changePage()">Wymagania</a>
   </nav>
 </header>

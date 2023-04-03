@@ -15,9 +15,11 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
     window.top;
     let sections = document.querySelectorAll('section');
     let links = document.querySelectorAll('header nav a');
+    let none = document.querySelectorAll('.toTop');
 
     window.onscroll=()=>{
       sections.forEach(sect=>{
@@ -35,6 +37,13 @@ export class HeaderComponent implements OnInit {
           });
         }
       });
+
+        if(window.scrollY>600){
+          none[0].classList.remove('none');
+        }else{
+          none[0].classList.add('none');
+        }
+
     }
   }
 
@@ -48,6 +57,15 @@ export class HeaderComponent implements OnInit {
         this.icon = "fa-bars";
         this.color="";
       }
+  }
+
+
+  changePage(){
+    if(this.active!="active"){
+      this.active="active";
+      this.icon = "fa-bars";
+      this.color="";
+    }
   }
 
 

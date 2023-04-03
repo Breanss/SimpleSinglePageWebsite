@@ -10,6 +10,7 @@ import { ScreensComponent } from './screens/screens.component';
 import { NationsComponent } from './nations/nations.component';
 import { VehiclesComponent } from './vehicles/vehicles.component';
 import { FooterComponent } from './footer/footer.component';
+import { TopComponent } from './top/top.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FooterComponent } from './footer/footer.component';
     ScreensComponent,
     NationsComponent,
     VehiclesComponent,
-    FooterComponent
+    FooterComponent,
+    TopComponent
   ],
   imports: [
     BrowserModule

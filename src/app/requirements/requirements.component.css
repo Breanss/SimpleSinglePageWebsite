@@ -30,7 +30,7 @@ section{
   border-collapse: collapse;
   margin-bottom: 15rem;
   margin-top: 2rem;
-  color: #f1e4d2;
+  color: #f1ecec;
   font-weight: 550;
 }
 
@@ -60,6 +60,10 @@ section{
 @media (max-width: 900px) {
   section{
     padding: 10rem 5% 5rem;
+  }
+
+  .requirement .requirement-table table{
+    margin-bottom: 7rem;
   }
 
   .recomend-only{
